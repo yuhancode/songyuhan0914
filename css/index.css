@@ -126,8 +126,8 @@
 	}
 	.page2 .head{
 		position: absolute;
-		width: 30%;
-		height: 19%;
+		width: 0.4rem;
+		height: 0.42rem;
 		border-radius:50%;
 		top:1.5rem;
 		left:0.35rem;
