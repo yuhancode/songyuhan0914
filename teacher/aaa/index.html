@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery实现的超酷打字机效果</title>
+<style type="text/css" media="screen, projection">
+  #ticker
+    {height: 12em; padding: 0.6em 0; margin: 0 0 1.8em 0; position: relative;}
+  #ticker .cursor
+    {display: inline-block; /*background: #f60; width: 0.6em; height: 1em;*/ text-align: center;}
+  	p,h3{ font:24px/36px Microsoft Yahei; text-align:center; color:#666}
+	p::-moz-selection{background:#f60;color:#fff;}
+	p::selection{background:#f60;color:#fff;}
+	h3::-moz-selection{background:#06f;color:#fff;}
+	h3::selection{background:#06f;color:#fff;}
+</style>
+<script type="text/javascript" SRC="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" SRC="js/jquery.jticker.js"></script>
+<script type="text/javascript">
+<!--
+  $(document).ready(function(){
+    
+	$("#ticker").ticker({
+ 		
+ 		rate:        120,  //字体显示时间
+ 		delay:       6000  //延迟时间
+	}).trigger("play").trigger("stop");  //完结停止
+
+    
+  	
+  });
+//-->
+</script>
+</head>
+<body>
+<div id="ticker">
+    <div>
+      	<h3>我自己横刀向天笑，笑完回家睡大觉</h3>
+        <p>雪，消逝了，消逝在风中，消逝在花香中，太无情了</p>
+    </div>
+</div>
+</body>
+</html>
